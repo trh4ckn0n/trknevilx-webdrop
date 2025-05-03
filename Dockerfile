@@ -12,7 +12,7 @@ WORKDIR /app
 COPY . /app
 
 # Script install & lancement
-RUN chmod +x install.sh && ./install.sh
+RUN chmod +x install.sh && bash install.sh
 
 # Port Flask
 EXPOSE 5000
